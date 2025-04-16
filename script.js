@@ -187,6 +187,32 @@ $(function(){
                 }
     })
 })
+$(function(){
+    $('#owl-news').owlCarousel({
+                ltr: true,
+                loop: true,
+                margin: 10,
+                nav:false,
+                // autoplay:true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                responsive:{
+                    0:{
+                        items: 2
+                    },
+                    576:{
+                        items: 3
+                    },
+                    768:{
+                        items: 4.1
+                    },
+                    992:{
+                        items: 4.2
+                    },
+                   
+                }
+    })
+})
 $('.owl-prev').click(function() {
     $('#owl-all').trigger('prev.owl.carousel');
     $('#owl-xmas').trigger('prev.owl.carousel');
