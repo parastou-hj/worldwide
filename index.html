@@ -11,26 +11,28 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./query.css" />
   
     <title>World Wide Wonders</title>
 </head>
 <body>
     <header>
-        <div class="container-fluid header py-lg-4 px-0">
+        <div class="container-fluid header py-lg-4 py-3 px-0">
             <div class="row col-xl-11 header-row">
-                <div class="col-lg-2 brand-img">
+                <div class="col-lg-2 col-2 brand-img">
                     <a href="#">
                         <img src="./images/logo.png" alt="">
                     </a>
                 </div>
-                <div class="col-lg-5 navs d-flex align-items-center justify-content-between">
-                    <div class="nav-item">
+                <div class="col-lg-5 navs ">
+                    <div class="nav-item destination-header ">
                         <span>DESTINATION</span>
+                        
                     </div>
-                    <div class="nav-item">
+                    <div class="nav-item ways-header ">
                         <span>WAYS TO TRAVEL</span>
                     </div>
-                    <div class="nav-item">
+                    <div class="nav-item deal-header ">
                         <span>DEALS</span>
                     </div>
                     <div class="nav-item">
@@ -39,9 +41,78 @@
                     <div class="search">
                         <img src="./images/Search.png" alt="">
                     </div>
+                    <div class="destination-mega-menu mega-menu">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h5>Popular Destinations</h5>
+                                <ul>
+                                    <li><a href="#">Paris, France</a></li>
+                                    <li><a href="#">Tokyo, Japan</a></li>
+                                    <li><a href="#">New York, USA</a></li>
+                                    <li><a href="#">Bali, Indonesia</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <h5>Adventure Spots</h5>
+                                <ul>
+                                    <li><a href="#">Swiss Alps</a></li>
+                                    <li><a href="#">Amazon Rainforest</a></li>
+                                    <li><a href="#">Great Barrier Reef</a></li>
+                                    <li><a href="#">Patagonia</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <h5>Cultural Experiences</h5>
+                                <ul>
+                                    <li><a href="#">Kyoto, Japan</a></li>
+                                    <li><a href="#">Rome, Italy</a></li>
+                                    <li><a href="#">Marrakech, Morocco</a></li>
+                                    <li><a href="#">Cairo, Egypt</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="./images/destination.jpg" alt="Destination">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ways-mega-menu mega-menu">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h5>Group Tours</h5>
+                                <ul>
+                                    <li><a href="#">Europe Explorer</a></li>
+                                    <li><a href="#">Asia Highlights</a></li>
+                                    <li><a href="#">Africa Safari</a></li>
+                                    <li><a href="#">South America Trek</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <h5>Solo Travel</h5>
+                                <ul>
+                                    <li><a href="#">Backpacking Europe</a></li>
+                                    <li><a href="#">Southeast Asia Loop</a></li>
+                                    <li><a href="#">Australia Outback</a></li>
+                                    <li><a href="#">New Zealand Adventure</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <h5>Luxury Travel</h5>
+                                <ul>
+                                    <li><a href="#">Maldives Resorts</a></li>
+                                    <li><a href="#">Santorini Getaway</a></li>
+                                    <li><a href="#">Dubai Extravaganza</a></li>
+                                    <li><a href="#">Caribbean Cruise</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="./images/travel.jpg" alt="Travel">
+                            </div>
+                        </div>
+                    </div>
+                  
                 </div>
-                <div class="col-lg-5 header-last d-flex align-items-center justify-content-end">
-                    <div class="user-wish d-flex">
+                <div class="col-lg-5 col-10 header-last d-flex align-items-center ">
+                    <div class="user-wish d-flex mx-lg-0 mx-3">
                         <div class="user">
                             <div class="user-header">
                                 <img src="./images/user.png" alt="">
@@ -55,7 +126,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="header-contact d-flex ms-3">
+                    <div class="header-contact  ms-3">
                         <div class="tell d-flex align-items-center justify-content-center me-3">
                             <img src="./images/tell.png" alt="">
                         </div>
@@ -63,6 +134,9 @@
                             <span>To More Iquiry</span>
                             <span>+432 621 737-990</span>
                         </div>
+                    </div>
+                    <div class="menu-bar">
+                        <i class="fa-solid fa-bars "></i>
                     </div>
                 </div>
             </div>
@@ -91,7 +165,7 @@
                     <p>Travel memories</p>
                 <p>you'll never forget</p>
                 </div>
-                <div class="slider-search mt-lg-5">
+                <div class="slider-search mt-lg-5 mt-4">
                     <div class="place">
                         <img src="./images/Search.png" alt="">
                         <input type="text" placeholder="Anywhere">
@@ -114,7 +188,7 @@
 
 
         <!-------------------------------main-txt-section------------------->
-        <div class="container-fluid px-0 mt-lg-5">
+        <div class="container-fluid px-0 mt-lg-5 mt-4">
             <div class="row col-xl-11">
                 <div class="main-txt text-center">
                     <span>1000s of experiences,over 100 countries</span>
@@ -257,6 +331,33 @@
                                                 <p class="offer-title"><span>Complete Galapagos</span> <br> <span>(Grand Daphne)</span></p>
                                                 <div class="price">
                                                     
+                                                    <span class="txt-gray mx-1">From</span>
+                                                    <span class="fw-bold">USD $7,865</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="offer-card-back">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="offer-box">
+                                    <div class="offer-card">
+                                        <a href="#">    
+                                            <div class="offer-card-img position-relative">
+                                                <img src="./images/lesure/3.png" alt="">
+                                                <div class="vip-wish d-flex align-items-center">
+                                                    <span>VIP Access</span>
+                                                    <img src="./images/lesure/heart.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="offer-text d-flex flex-column">
+                                                <div class="d-flex txt-gray fw-bold stay">
+                                                    <span class="days">10 DAYS.</span>
+                                                    <span>COMFORT</span>
+                                                </div>
+                                                <p class="offer-title"><span>Complete Galapagos</span> <br> <span>(Grand Daphne)</span></p>
+                                                <div class="price">
+                                                    <span class="off-price fw-bold ">%20 off</span>
                                                     <span class="txt-gray mx-1">From</span>
                                                     <span class="fw-bold">USD $7,865</span>
                                                 </div>
@@ -775,8 +876,8 @@
         </div>
 
 
-        <!-------------------------------top-rated-section------------------->
-        <div class="container-fluid px-0 travel-sec mt-lg-5">
+        <!-------------------------------travel-section------------------->
+        <div class="container-fluid px-0 travel-sec mt-lg-5 mt-4">
             <div class="row col-xl-11 travel-part align-items-center ">
                 <div class="col-4 travel-img">
                     <img src="./images/rated/travel.png" alt="">
@@ -895,35 +996,35 @@
                     <span>Why Choose Us?</span>
                 </div>
                 <div class="row justify-content-between mt-5">
-                    <div class="col-4 p-4">
+                    <div class="col-lg-4 p-lg-4 mt-lg-0 mt-2">
                         <div class="benefit-card">
-                           <div class="benfit-img d-flex align-items-center justify-content-center mt-4">
+                           <div class="benfit-img d-flex align-items-center justify-content-center mt-lg-4 my-2">
                             <img src="./images/b1.png" alt="">
                            </div>
-                            <p class="mt-5 mb-4 title">The right trip for you</p>
+                            <p class="mt-lg-5 mb-lg-4 my-1 title">The right trip for you</p>
                             <p>Whether near or far from home, your trip will be local led and full of unforgettable experiences, with everything taking care of.</p>
                         </div>
                     </div>
-                    <div class="col-4 p-4">
+                    <div class="col-lg-4 p-lg-4 mt-lg-0 mt-2">
                         <div class="benefit-card">
-                           <div class="benfit-img d-flex align-items-center justify-content-center mt-4">
-                            <img src="./images/b2.png" alt="">
-                           </div>
-                            <p class="mt-5 mb-4 title">The right trip for you</p>
-                            <p>Whether near or far from home, your trip will be local led and full of unforgettable experiences, with everything taking care of.</p>
-                        </div>
+                            <div class="benfit-img d-flex align-items-center justify-content-center mt-lg-4 my-2">
+                             <img src="./images/b2.png" alt="">
+                            </div>
+                             <p class="mt-lg-5 mb-lg-4 my-1 title">The right trip for you</p>
+                             <p>Whether near or far from home, your trip will be local led and full of unforgettable experiences, with everything taking care of.</p>
+                         </div>
                     </div>
-                    <div class="col-4 p-4">
+                    <div class="col-lg-4 p-lg-4 mt-lg-0 mt-2">
                         <div class="benefit-card">
-                           <div class="benfit-img d-flex align-items-center justify-content-center mt-4">
-                            <img src="./images/b3.png" alt="">
-                           </div>
-                            <p class="mt-5 mb-4 title">The right trip for you</p>
-                            <p>Whether near or far from home, your trip will be local led and full of unforgettable experiences, with everything taking care of.</p>
-                        </div>
+                            <div class="benfit-img d-flex align-items-center justify-content-center mt-lg-4 my-2">
+                             <img src="./images/b3.png" alt="">
+                            </div>
+                             <p class="mt-lg-5 mb-lg-4 my-1 title">The right trip for you</p>
+                             <p>Whether near or far from home, your trip will be local led and full of unforgettable experiences, with everything taking care of.</p>
+                         </div>
                     </div>
                 </div>
-                <div class="benefit-last">
+                <div class="benefit-last ">
                     <span>The intrepid Difference</span>
                 </div>
             </div>
@@ -933,7 +1034,7 @@
          <div class="container-fluid px-0 stat-sec my-4">
             <div class="row col-xl-11">
                 <div class="circle-sec">
-                    <div class="container">
+                    <div class="container-fluid">
                         <div class="stat">
                             <div class="outer-circle outer-circle-green">
                                 <div class="circle circle-green">

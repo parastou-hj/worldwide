@@ -37,20 +37,25 @@ $(function(){
                 loop: true,
                 margin: 10,
                 nav:false,
+                dots:false,
                 autoplay:true,
                 autoplayTimeout: 3000,
                 autoplayHoverPause: true,
                 responsive:{
                     0:{
-                        items: 2
-                    },
-                    576:{
-                        items: 3
+                        items: 1.1
+                    }, 
+                    
+                    480:{
+                        items: 2.2
                     },
                     768:{
-                        items: 4.1
+                        items: 3.1
                     },
                     992:{
+                        items: 4.1
+                    },
+                    1200:{
                         items: 4.2
                     },
                    
@@ -68,15 +73,19 @@ $(function(){
                 autoplayHoverPause: true,
                 responsive:{
                     0:{
-                        items: 2
-                    },
-                    576:{
-                        items: 3
+                        items: 1.1
+                    }, 
+                    
+                    480:{
+                        items: 2.2
                     },
                     768:{
-                        items: 4.1
+                        items: 3.1
                     },
                     992:{
+                        items: 4.1
+                    },
+                    1200:{
                         items: 4.2
                     },
                    
@@ -94,15 +103,19 @@ $(function(){
                 autoplayHoverPause: true,
                 responsive:{
                     0:{
-                        items: 2
-                    },
-                    576:{
-                        items: 3
+                        items: 1.1
+                    }, 
+                    
+                    480:{
+                        items: 2.2
                     },
                     768:{
-                        items: 4.1
+                        items: 3.1
                     },
                     992:{
+                        items: 4.1
+                    },
+                    1200:{
                         items: 4.2
                     },
                    
@@ -120,15 +133,19 @@ $(function(){
                 autoplayHoverPause: true,
                 responsive:{
                     0:{
-                        items: 2
-                    },
-                    576:{
-                        items: 3
+                        items: 1.1
+                    }, 
+                    
+                    480:{
+                        items: 2.2
                     },
                     768:{
-                        items: 4.1
+                        items: 3.1
                     },
                     992:{
+                        items: 4.1
+                    },
+                    1200:{
                         items: 4.2
                     },
                    
@@ -149,10 +166,10 @@ $(function(){
                         items: 2
                     },
                     576:{
-                        items: 3
+                        items: 3.2
                     },
                     768:{
-                        items: 4.1
+                        items: 3.8
                     },
                     992:{
                         items: 4.2
@@ -214,15 +231,46 @@ $(function(){
     })
 })
 $('.owl-prev').click(function() {
-    $('#owl-all').trigger('prev.owl.carousel');
-    $('#owl-xmas').trigger('prev.owl.carousel');
-    $('#owl-nowrouz').trigger('prev.owl.carousel');
+    $('#owl-culture').trigger('prev.owl.carousel');
+    $('#owl-nature').trigger('prev.owl.carousel');
+    $('#owl-food').trigger('prev.owl.carousel');
+    $('#owl-sports').trigger('prev.owl.carousel');
+    $('#owl-rated').trigger('prev.owl.carousel');
+    $('#owl-dest').trigger('prev.owl.carousel');
+    $('#owl-news').trigger('prev.owl.carousel');
 });
 
 $('.owl-next').click(function() {
-    $('#owl-all').trigger('next.owl.carousel');
-    $('#owl-xmas').trigger('next.owl.carousel');
-    $('#owl-nowrouz').trigger('next.owl.carousel');
+    $('#owl-culture').trigger('next.owl.carousel');
+    $('#owl-nature').trigger('next.owl.carousel');
+    $('#owl-food').trigger('next.owl.carousel');
+    $('#owl-sports').trigger('next.owl.carousel');
+    $('#owl-rated').trigger('next.owl.carousel');
+    $('#owl-dest').trigger('next.owl.carousel');
+    $('#owl-news').trigger('next.owl.carousel');
 
 });
+$(document).ready(function() {
+    $('.destination-header').on('mouseover', function() {
+        $('.destination-mega-menu').addClass('show');
+    });
 
+    $('.destination-header, .destination-mega-menu').on('mouseleave', function(e) {
+        setTimeout(function() {
+            if (!$('.destination-header').is(':hover') && !$('.destination-mega-menu').is(':hover')) {
+                $('.destination-mega-menu').removeClass('show');
+            }
+        }, 100);
+    });
+    $('.ways-header').on('mouseover', function() {
+        $('.ways-mega-menu').addClass('show');
+    });
+
+    $('.ways-header, .ways-mega-menu').on('mouseleave', function(e) {
+        setTimeout(function() {
+            if (!$('.ways-header').is(':hover') && !$('.ways-mega-menu').is(':hover')) {
+                $('.ways-mega-menu').removeClass('show');
+            }
+        }, 100);
+    });
+});
