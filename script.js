@@ -257,7 +257,7 @@ $(function(){
                         items: 2.2
                     },
                     768:{
-                        items: 3.1
+                        items: 2.8
                     },
                     992:{
                         items: 4.1
@@ -373,10 +373,10 @@ $(function(){
                         items: 2
                     },
                     576:{
-                        items: 3.2
+                        items: 2.8
                     },
                     768:{
-                        items: 3.8
+                        items: 3.2
                     },
                     992:{
                         items: 4.2
@@ -405,6 +405,9 @@ $(function(){
                         items: 4.1
                     },
                     992:{
+                        items: 4.7
+                    },
+                    1200:{
                         items: 5
                     },
                    
@@ -702,3 +705,6 @@ $(document).ready(function() {
 });
 
 
+$('.up').on('click',function(){
+    document.documentElement.scrollTop = 0;
+})
